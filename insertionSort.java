@@ -1,5 +1,5 @@
 import java.util.*;
-class is{
+class insertionSort{
     public static void main(String[] args){
         int[] arr = {9,8,17,3,2,15,99,5};
         int j,temp;

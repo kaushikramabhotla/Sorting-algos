@@ -45,6 +45,29 @@ class ms{
         else replace it with rth element && increment j by 1
 
         next, we have to check whether there are any leftovers in the left & right arrays.
+        thats it, we have to do it recursively for both the left and right arrays.
+
+        Strengths:
+            Fast. Merge sort runs in
+            O(nlog(n))
+            O(nlog(n)), which scales well as n grows.
+            Parallelizable. Merge sort breaks the input into chunks,
+            each of which can be sorted at the same time in parallel.
+        Weaknesses:
+            Space. Merge sort takes up O(n) extra space, including
+            O(lg(n)) space for the recursive call stack.
+
+        Time complexity of Merge Sort is  θ(nLogn) in all 3 cases
+        (worst, average and best) as merge sort always divides the array into two halves
+        and takes linear time to merge two halves.
+
+        Auxiliary Space: O(n)
+        
+        Algorithmic Paradigm: Divide and Conquer
+        Sorting In Place: No in a typical implementation
+        Stable: Yes
+
+
         */
 		while(i<nL && j<nR){
             if(l[i]<=r[j]){

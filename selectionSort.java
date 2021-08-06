@@ -1,5 +1,5 @@
 import java.util.*;
-class ss{
+class selectionSort{
     public static void main(String[] args){
         int[] arr = {10,9,12,5,1,6,25};
         /*
